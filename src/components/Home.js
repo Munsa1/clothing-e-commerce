@@ -4,8 +4,13 @@ import Card from "react-bootstrap/Card";
 function Home() {
   return (
     <div className="hero">
-      <Card className="bg-dark text-white">
-        <Card.Img src="holder.js/100px270" alt="Card image" />
+      <Card className="bg-dark text-white border-0">
+        <Card.Img
+          src="/assets/card-bg-2.jpg"
+          alt="Card image"
+          className="card-image"
+          height="550px"
+        />
         <Card.ImgOverlay>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
