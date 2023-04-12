@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faSignIn } from "@fortawesome/free-solid-svg-icons";
 
 function Navigation() {
   return (
@@ -21,7 +21,10 @@ function Navigation() {
             <Nav.Link href="#link">Contact</Nav.Link>
           </Nav>
           <Nav>
-            <a href="" className="btn btn-outline-dark">Login</a>
+            <a href="" className="btn btn-outline-dark">
+              <FontAwesomeIcon icon={faSignIn} />
+              Login
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Container>
