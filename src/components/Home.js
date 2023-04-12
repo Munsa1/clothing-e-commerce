@@ -11,13 +11,13 @@ function Home() {
           className="card-image"
           height="550px"
         />
-        <Card.ImgOverlay>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-          <Card.Text>Last updated 3 mins ago</Card.Text>
+        <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-center">
+          <div className="container">
+            <Card.Title className="display-3 fw-bolder mb-0">
+              NEW SEASON ARRIVALS
+            </Card.Title>
+            <Card.Text className="card-text lead fs-2">Check out all trends</Card.Text>
+          </div>
         </Card.ImgOverlay>
       </Card>
     </div>
