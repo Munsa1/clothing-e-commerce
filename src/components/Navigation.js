@@ -3,11 +3,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSignIn } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSignIn,
+  faUserPlus,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Navigation() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="py-3 shadow-sm bg-white">
       <Container className="container">
         <Navbar.Brand href="#home" className="fw-bold fs-4">
           Pearsons
@@ -22,8 +26,16 @@ function Navigation() {
           </Nav>
           <Nav>
             <a href="" className="btn btn-outline-dark">
-              <FontAwesomeIcon icon={faSignIn} />
+              <FontAwesomeIcon icon={faSignIn} className="me-1" />
               Login
+            </a>
+            <a href="" className="btn btn-outline-dark ms-2">
+              <FontAwesomeIcon icon={faUserPlus} className="me-1" />
+              Register
+            </a>
+            <a href="" className="btn btn-outline-dark ms-2">
+              <FontAwesomeIcon icon={faShoppingCart} className="me-1" />
+              Cart (0)
             </a>
           </Nav>
         </Navbar.Collapse>
