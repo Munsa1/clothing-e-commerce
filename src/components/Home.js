@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Products from "./Products";
 
 function Home() {
   return (
@@ -14,12 +15,13 @@ function Home() {
         <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-center">
           <div className="container">
             <Card.Title className="display-3 fw-bolder mb-0">
-              NEW SEASON ARRIVALS
+              NEW SEASON <br />ARRIVALS
             </Card.Title>
             <Card.Text className="card-text lead fs-2">Check out all trends</Card.Text>
           </div>
         </Card.ImgOverlay>
       </Card>
+      <Products />
     </div>
   );
 }
