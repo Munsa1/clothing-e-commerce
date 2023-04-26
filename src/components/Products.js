@@ -23,21 +23,26 @@ function Products() {
     getProducts();
   }, []);
 
-  const Loading = ()=>{
-    return(
+  const Loading = () => {
+    return <>Loading...</>;
+  };
+
+  const ShowProducts = () => {
+    return (
       <>
-      Loading...
+        <div className="buttons d-flex justify-content-center">
+          <button className="btn btn-outline-dark me-2">All</button>
+          <button className="btn btn-outline-dark me-2">Men's Clothing</button>
+          <button className="btn btn-outline-dark me-2">
+            Women's Clothing
+          </button>
+          <button className="btn btn-outline-dark me-2">
+            Electronic's Clothing
+          </button>
+        </div>
       </>
-    )
-  }
-
-  const ShowProducts = ()=>{
-    <div className="buttons">
-      <button className="btn btn-outline-dark">All</button>
-      <button className="btn btn-outline-dark">Men's Clothing</button>
-    </div>;
-
-  }
+    );
+  };
   return (
     <div>
       <div className="container my-5 py-5">
@@ -48,7 +53,7 @@ function Products() {
           </div>
         </div>
         <div className="row justify-content-center">
-          {loading ? <Loading/> : <ShowProducts/>}
+          {loading ? <Loading /> : <ShowProducts />}
         </div>
       </div>
     </div>
