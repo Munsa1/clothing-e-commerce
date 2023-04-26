@@ -30,7 +30,7 @@ function Products() {
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons d-flex justify-content-center">
+        <div className="buttons d-flex justify-content-center mb-5 pb-5">
           <button className="btn btn-outline-dark me-2">All</button>
           <button className="btn btn-outline-dark me-2">Men's Clothing</button>
           <button className="btn btn-outline-dark me-2">
@@ -40,6 +40,9 @@ function Products() {
             Electronic's Clothing
           </button>
         </div>
+        {filter.map((product)=>{
+          
+        })}
       </>
     );
   };
