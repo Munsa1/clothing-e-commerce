@@ -45,11 +45,11 @@ function Products() {
         {filter.map((product) => {
           return (
             <>
-              <div className="col-md-3">
-                <Card className="card">
-                  <Card.Img variant="top" src={product.image} alt={product.title}/>
+              <div className="col-md-3 mb-4">
+                <Card className="card h-100 text-center p-4" key={product.id}>
+                  <Card.Img variant="top" src={product.image} alt={product.title} height="250px"/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title className="mb-0">{product.title.substring(0, 12)}</Card.Title>
                     <Card.Text>
                       ${product.price}
                     </Card.Text>
