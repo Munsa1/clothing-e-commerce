@@ -51,7 +51,7 @@ function Products() {
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
-                      {product.price}
+                      ${product.price}
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
