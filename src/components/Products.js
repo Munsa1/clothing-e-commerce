@@ -30,6 +30,14 @@ function Products() {
       </>
     )
   }
+
+  const ShowProducts = ()=>{
+    <div className="buttons">
+      <button className="btn btn-outline-dark">All</button>
+      <button className="btn btn-outline-dark">Men's Clothing</button>
+    </div>;
+
+  }
   return (
     <div>
       <div className="container my-5 py-5">
